@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello world</title>
+  <link rel="stylesheet" href="/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+  <script src="/main.js"></script>
+  <style>
+    td {
+      border: 1px solid red;
+      padding: 10px;
+    }
+  </style>
+  <style>
+    .red-style {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello</h1>
+  <h2>Hello</h2>
+  <h3>Hello</h3>
+  <h4>Hello</h4>
+  <h5>Hello</h5>
+  <h6>Hello</h6>
+  <div>Hello</div>
+  <p>Hello, <img src="/images/dog.jpg" alt="" style="width: 100px;">world</p>
+  <ul>
+    <li>사과</li>
+    <li>포도</li>
+    <li>딸기</li>
+    <li>오렌지</li>
+  </ul>
+  <a href="www.naver.com">네이버</a>
+  <a href="www.naver.com" target="_blank">네이버</a>
+  <p><span>Hell<br/></span>o</p>
+  <label>
+  <input type="checkbox">Apple
+  </label>
+  <label>
+    <input type="checkbox">Banana
+  </label>
+
+  <br/>
+
+  <label>
+    <input type="radio" name="fruits">Apple
+  </label>
+  <label>
+    <input type="radio" name="fruits">Banana
+  </label>
+ 
+  <br/>
+
+  <table>
+    <tr>
+      <td>A</td>
+      <td>B</td>
+      <td>C</td>
+      <td>D</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>F</td>
+      <td colspan="2">G</td>
+    </tr>
+  </table>
+  <div title="네이버" style="color: aqua;">www.naver.com</div>
+  
+  <div id="red-style">A</div>
+  <div>B</div>
+  <div class="red-style">C</div>
+  <div data-fruit-type="apple">과일바구니</div>
+  <script>
+    let fruit = document.querySelectorAll("div")[0].dataset.fruitType
+    console.log(fruit)
+  </script>
+</body>
+</html>
